@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-import { string } from 'prop-types';
 
 const postSchema = new mongoose.Schema({
   title: String,
@@ -17,6 +16,6 @@ const postSchema = new mongoose.Schema({
   },
 });
 
-const PostMessage = mongoose.model('PostMessage');
+const PostMessage = mongoose.model('PostMessage', postSchema);
 
 export default PostMessage;
