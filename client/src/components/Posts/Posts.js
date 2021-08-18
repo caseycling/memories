@@ -12,7 +12,7 @@ const Posts = () => {
 
   console.log(posts);
 
-  return posts.length ? (
+  return !posts.length ? (
     <CircularProgress />
   ) : (
     <Grid
